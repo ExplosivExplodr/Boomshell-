@@ -17,3 +17,5 @@ install.sh
 I maed it and im
 Exploder :p
 
+note, have not tested it :3
+
