@@ -1,4 +1,4 @@
-kkkksection .data
+section .data
     prompt db "boomshell> ", 0
     prompt_len equ $ - prompt
     sh_path db "/bin/sh", 0
