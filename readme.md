@@ -9,7 +9,7 @@ i386.
 written in hex,super
 lightweight. I mean it.
 You can fit it
-inside you fucking cpu
+inside your fucking cpu
 cache. Just run:
 install.sh
 
