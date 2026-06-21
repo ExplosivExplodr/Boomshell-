@@ -4,9 +4,8 @@
 ##                      ##     
 ##########################
 
-This is a shell for linux
-i386.
-written in hex,super
+This is a shell for linux.
+written in 32-bit Linux x86 assembly (IA-32) ,super
 lightweight. I mean it.
 You can fit it
 inside your fucking cpu
