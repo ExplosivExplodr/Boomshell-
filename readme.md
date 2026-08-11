@@ -5,13 +5,12 @@
 ##########################
 
 This is a shell for linux.
-written in 32-bit Linux x86 assembly (IA-32) ,super
-lightweight. I mean it.
+written in linux x86 assembly (IA-32) 
+super lightweight.
 You can fit it
-inside your fucking cpu
-cache. to compile make install.sh executable and just run:
-install.sh
-
-I maed it and im
-Exploder :p
+inside your cpu cache. to compile 
+make install.sh
+executable and just run it.
+its a really small script
+:p
 
