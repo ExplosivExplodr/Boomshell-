@@ -141,7 +141,7 @@ _start:
     cmp al, 0
     jne .copy_cmd_loop
 
-    ; 7. Execute via sys_execve
+    ; Execute via sys_execve
     mov ebx, path_buf           ; ebx = executable path 
 				; for example "/bin/ls"
     mov ecx, argv_space         ; ecx = argv array pointer
