@@ -11,5 +11,7 @@ chmod +x install.sh
 ./install.sh
 ```
 its a really small script, so you can also just run the assembler and linker commands separately
-
-
+```Bash
+nasm -f elf32 boomshell.asm -o boomshell.o # Assemble
+ld -m elf_i386 boomshell.o -o boomshell # Link
+```
