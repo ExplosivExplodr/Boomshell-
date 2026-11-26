@@ -33,8 +33,16 @@ _start:
     mov edx, 255                
     int 0x80
 
-    cmp eax, 1                  ; if only return is pressed, loop back
-    jle .loop                   
+	; EOF handling
+    test eax, eax 	; test if 0, negative or positive
+    jz .handle_eof
+	
+	js .loop ; for read errors
+	
+	; for empty inputs:
+	cmp eax, 1 ; compare with 1 inside eax
+	je .loop
+
 
     ; replace newline character (\n) with null-terminator (0)
     mov byte [cmd_buf + eax - 1], 0
@@ -149,6 +157,11 @@ _start:
 
 ; builtin headers
 .handle_exit:
+    mov eax, 1                  ; sys_exit
+    xor ebx, ebx                ; exit status = 0
+    int 0x80
+
+.handle_eof:
     mov eax, 1                  ; sys_exit
     xor ebx, ebx                ; exit status = 0
     int 0x80
